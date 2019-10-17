@@ -1,3 +1,15 @@
+*{ /* applies to all*/
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{ /* applies to wrapper class*/
+  height: 100vh; /* whole space vertically */
+  padding-top: 15px; /* top padding(magin) down 15px*/
+  display: grid; /*  elemento de bloque */
+  grid-template-rows: 32px 1fr 81.5px; /* define el nombre de las líneas y las funciones de tamaño de línea de grid rows.*/
+}
+
 ul {
     list-style-type: none;
     margin: 0;
