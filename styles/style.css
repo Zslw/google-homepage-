@@ -117,11 +117,72 @@ padding-right: 30px;
   border: none;
   box-shadow: 0 0 5px #bbbbbb;
 }
-/*
+
+/* Buttons */
+.buttons { /* buttons size and alignment */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 36px;
+  gap: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.btn1,
+.btn2 {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 18px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn1:hover,
+.btn2:hover {
+  cursor: pointer;
+  margin: -1px; /* In order for border not to change element's size margin had to be adjusted */
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 0 2px #f2f2f2;
+}
+
+.btn1:hover a,
+.btn2:hover a {
+  color: black;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #6f6f6f;
+}
+/* The only paragraph i have*/
+
+
+.main p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.main p a {
+  text-decoration: none;
+  color:#1a0dab;
+}
+.main p a:hover{
+  text-decoration: underline;
+}
+.buho {
+  border: none;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/*------------------------------------------*/
+/* Footer */
+/*------------------------------------------*/
+
 .footer {
   grid-row: -2 / -1;
 }
-*/
+
 
 
 
