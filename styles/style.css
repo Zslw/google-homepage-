@@ -1,3 +1,6 @@
+/*------------------------------------------*/
+/* Global */
+/*------------------------------------------*/
 *{ /* applies to all*/
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,22 +13,76 @@
   grid-template-rows: 32px 1fr 81.5px; /* define el nombre de las líneas y las funciones de tamaño de línea de grid rows.*/
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-  }
+ul { /* applies to all ul elements, no list icon, no spacing*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  cursor: pointer;
+}
+/*------------------------------------------*/
+/* Header/Navigational bar */
+/*------------------------------------------*/
+
+.header{/* applies to header class*/
+  grid-row: 1 / span 1;
+}
+
+.navigation  ul{
+display: grid;
+grid-template-columns: repeat(4, max-content);
+grid-template-rows: 1fr;
+gap: 20px;
+align-items: center;
+justify-content: end;
+padding-right: 30px;
+}
+
+/*list elements*/
+.navigation li {
+  display: block; /* elemento de bloque*/
+}
+.navigation li:hover {
+  cursor: pointer;
+}
+
+/* "a" elements*/
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.navigation a:hover {
+  text-decoration: underline;
+  color: #6f6f6f;
+}
+/* Alignment and details*/
+.user-image {
+  border-radius: 50%;
+}
+.cubes, 
+.user-image {
+  vertical-align: top;
+}
+.navigation a {
+  vertical-align: middle;
+}
+
+/*------------------------------------------*/
+/* Main */
+/*------------------------------------------*/
+
+/*
+.main{/* applies to main class
+  grid-row: 2 / span 1;
+}
+
+.footer {
+  grid-row: -2 / -1;
+}
+*/
+
+
+
+
