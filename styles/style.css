@@ -73,11 +73,51 @@ padding-right: 30px;
 /* Main */
 /*------------------------------------------*/
 
-/*
-.main{/* applies to main class
+.main{/* applies to main class */
   grid-row: 2 / span 1;
 }
 
+.main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 25px;
+  align-content: start;
+  justify-items: center;
+}
+
+/*logo*/
+.main .logo{
+  margin: 150px 0px 0px;
+}
+
+/* Search box*/
+.search-box{ /* just the box*/
+  position: relative;
+}
+.maginifier{ /* Just the image*/
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  padding: 7px;
+  width: 32px;
+  opacity: 0.40;
+}
+
+.input { /* Actual text box*/
+  width: 584px;
+  height: 44px;
+  border-radius: 30px;
+  border: 1px solid #dfe1e5;
+  padding-left: 50px; /* Used to move the cursor next to the magnifier */
+}
+
+.input:hover ,
+.input:focus {
+  border: none;
+  box-shadow: 0 0 5px #bbbbbb;
+}
+/*
 .footer {
   grid-row: -2 / -1;
 }
